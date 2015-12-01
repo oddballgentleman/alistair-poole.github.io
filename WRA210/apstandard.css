@@ -1,0 +1,128 @@
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+
+header {
+	z-index: 0;
+}
+
+/* body {
+	background-image: url("gradient.png");
+	background-repeat: repeat-x;
+} */
+
+#grad {
+  background: -webkit-linear-gradient(black, white 20%);
+  background: -o-linear-gradient(black, white 20%);
+  background: -moz-linear-gradient(black, white 20%);
+  background: linear-gradient(black, white 20%);
+}
+
+p.fancy {
+	font-family: 'Great Vibes', cursive;
+	text-align: center;
+	font-size: 30px;
+}
+
+h1.fancy {
+	font-family: 'Great Vibes', cursive;
+	text-align: center;
+	font-size: 50px;
+	color: white;
+}
+
+.footer {
+    position:fixed;
+    bottom:10px;
+    height:30px;
+    width:100%;
+}
+
+div.flourish {
+	position:fixed;
+	bottom: 0px;
+    height:70px;
+    width:100%;
+	background-image: url("flourish2.gif");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+ul {
+	font-size:20;
+}
+
+p.center {
+	text-align: center;
+}
+
+p.golink {
+	color: white;
+	size: 25px;
+	font-weight: bold;
+}
+
+a.link:link, a.link:visited{
+	color: black;
+	size: 25px;
+}
+
+div.module:hover {
+	color: black;
+	animation-name: module;
+	animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+div.module{
+	background-color: white;
+	width: 200px;
+}
+
+div.backcenter {
+    width: 500px;
+    height: 500px;
+	background-image: url("cube.gif");
+    position: absolute;
+    top:100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	z-index: -1;
+
+    margin: auto;
+}
+
+@keyframes module {
+	from{background-color: white;}
+	to{background-color: black;}
+}
+
+#faux-gif {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    /* animation: giffy 0.5s infinite linear; */
+    /* no fade between frames */
+    animation: giffy 0.5s infinite steps(1);
+}
+
+#faux-gif:hover {
+    animation-play-state:paused;
+}
+
+@keyframes giffy {
+    0%   { background-image: url(''); } 
+    15%  { background-image: url(''); }
+    30%  { background-image: url(''); }
+    45%  { background-image: url(''); }
+    60%  { background-image: url(''); }
+    75%  { background-image: url(''); }
+    90%  { background-image: url(''); }
+    100% { background-image: url(''); }
+

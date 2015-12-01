@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" type="text/css" href="landingstyles.css">
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+  <!--<script src="showhide.js"></script>-->
+  <script>
+  $(document).ready(function(){
+    var links = $('.bound');
+    var divs = $('div');
+    links.click(function(event){
+       divs.hide();
+       divs.filter('.' + event.target.id).show();
+    });
+  });
+  </script>
+  <title>
+  Alistair Poole
+  </title>
+  
+  </head>
+  
+  <body id="grad">
+  <div class="banner">
+  </div>
+  <div class="title">
+  <h1>Portfolio</h1>
+  </div>
+  <div class="filterholder">	
+	<!--<div id="filter" class="filter" onclick="showhide1()">
+	<h3>Poems</h3>
+	</div>
+	<div id="filter" class="filter" onclick="showhide2()">
+	<h3>Short Stories</h3>
+	</div>-->
+	<div id="filter" class="filter">
+	<a href="#" class="bound" id="poem">Poems</a>
+	</div>
+	<div id="filter" class="filter">
+	<a href="#" class="bound" id="short">Short Stories</a>
+	</div>
+  </div>
+  <div class="holder">
+	<div id="poem" class="element">
+		<div class="image">
+		<img src="cooltree.png" height="100" width="100"/>
+		</div>
+		<h4>Example Short Story</h4>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	</div>
+	<div id="poem" class="element">
+		<div class="image">
+		<img src="Wizard.jpg" height="100" width="100"/>
+		</div>
+		<h4>Example Poem</h4>
+		<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	</div>
+	<div id="short" class="element">
+		<div class="image">
+		<img src="FHMUN.png" height="100" width="100"/>
+		</div>
+		<h4>Example Short Story</h4>
+		<p>im ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+	</div>
+  </div>
+  </body>
+  
+ </html>

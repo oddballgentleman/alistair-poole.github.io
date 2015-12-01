@@ -1,0 +1,178 @@
+/*body {
+	background-image: url("gradient.png");
+	background-repeat: repeat-x;
+}*/
+
+#grad {
+  background: -webkit-linear-gradient(left, #0C253D, tan, tan, tan, tan, #0C253D);
+  background: -o-linear-gradient(left, #0C253D, tan, tan, tan, tan, #0C253D);
+  background: -moz-linear-gradient(left, #0C253D, tan, tan, tan, tan, #0C253D);
+  background: linear-gradient(left, #0C253D, tan, tan, tan, tan, #0C253D);
+}
+
+div.banner {
+	max-height: 100px;
+	min-height: 30px;
+}
+
+div.title {
+	height: 200px;
+	text-align: center;
+}
+
+div.holder {
+	position: relative;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+div.filterholder {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	display: -webkit-flex;
+	display: flex;
+	max-width: 960px;
+}
+
+div.button {
+	display: inline-block;
+	width: 300px;
+	height: 400px;
+	margin: 8px;
+	text-align: center;
+}
+
+div.filter {
+  -webkit-flex: initial;
+          flex: initial;
+  width: 500px;
+  min-width: 100px;
+  height: 50px;
+  display: inline;
+  text-align: center;
+}
+
+div.element {
+	position: relative;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	overflow: auto;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	border: 2px solid rgba(255,0,0,0);
+}
+
+div.element:hover {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	border: 2px solid #0C253D;
+}
+
+div.image {
+	float: left;
+	height: 100px;
+	width: 100px;
+	margin: 18px;
+	border: 2px solid #0C253D;
+}
+
+div.menu {
+	width: 220px;
+	margin: 10px;
+}
+
+div.content {
+	flex-grow: 1;
+	margin: 10px;
+}
+
+div.bflourish {
+	margin-left: auto;
+	margin-right: auto
+}
+
+#button {
+    border-radius: 25px;
+    width: 300px;
+    height: 400px;
+	margin: 7px;
+	display: inline-block;
+	text-align: center;
+}
+
+#button:hover {
+    border-radius: 25px;
+    width: 300px;
+    height: 400px;
+	margin: 7px;
+	display: inline-block;
+	text-align: center;
+	background: -webkit-radial-gradient( white 20%, rgba(255,0,0,0), rgba(255,0,0,0));
+	background: -o-radial-gradient(white 20%, rgba(255,0,0,0), rgba(255,0,0,0));
+	background: -moz-radial-gradient(white 20%, rgba(255,0,0,0), rgba(255,0,0,0));
+	background: radial-gradient(white 20%, rgba(255,0,0,0), rgba(255,0,0,0));
+}
+
+/* Unused
+
+#highlight {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	border: 2px solid rgba(255,0,0,0);
+}
+
+#highlight:hover {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	border: 2px solid #0C253D; /*
+	background: -webkit-radial-gradient( #F0E0FF, #FFFFFF 70%, #0C253D, #F0E0FF);
+	background: -o-radial-gradient( #F0E0FF, #FFFFFF 70%, #0C253D, #F0E0FF);
+	background: -moz-radial-gradient( #F0E0FF, #FFFFFF 70%, #0C253D, #F0E0FF);
+	background: radial-gradient( #F0E0FF, #FFFFFF 70%, #0C253D, #F0E0FF);
+}
+
+*/
+
+#filter {
+    border-radius: 25px;
+	border: 2px solid #0C253D;
+	margin: 10px
+}
+
+#filter:hover {
+    border-radius: 25px;
+	border: 0px solid;
+	margin: 12px;
+	background: -webkit-radial-gradient(#FFFFFF 40%, rgba(255,0,0,0), rgba(255,0,0,0));
+	background: -o-radial-gradient(#FFFFFF 40%, rgba(255,0,0,0), rgba(255,0,0,0));
+	background: -moz-radial-gradient(#FFFFFF 40%, rgba(255,0,0,0), rgba(255,0,0,0));
+	background: radial-gradient(#FFFFFF 40%, rgba(255,0,0,0), rgba(255,0,0,0));
+}
+
+h1 {
+	font-size: 100px;
+	font-family: 'Playfair Display', serif;
+	/*font-family: "Comic Sans MS", cursive, sans-serif;*/
+}
+
+h2 {
+	font-size: 2em;
+	font-family: 'Playfair Display', serif;
+	/*font-family: "Comic Sans MS", cursive, sans-serif;*/
+}
+
+h3, h4, h5, h6, h7, p {
+	font-family: 'Playfair Display', serif;
+	/*font-family: "Comic Sans MS", cursive, sans-serif;*/
+}
+
+a {
+	color: black;
+	font-family: 'Playfair Display', serif;
+	text-decoration: none;
+}
